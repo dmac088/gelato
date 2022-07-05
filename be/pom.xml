@@ -133,28 +133,28 @@
 		<dependency>
 			<groupId>org.kie</groupId>
 			<artifactId>kie-ci</artifactId>
-			<version>${drools-version}</version>
+			<version>${drools.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.drools</groupId>
 			<artifactId>drools-decisiontables</artifactId>
-			<version>${drools-version}</version>
+			<version>${drools.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.drools</groupId>
 			<artifactId>drools-core</artifactId>
-			<version>${drools-version}</version>
+			<version>${drools.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.drools</groupId>
 			<artifactId>drools-compiler</artifactId>
-			<version>${drools-version}</version>
+			<version>${drools.version}</version>
 		</dependency>
 		<!--spring integration -->
 		<dependency>
 			<groupId>org.kie</groupId>
 			<artifactId>kie-spring</artifactId>
-			<version>${drools-version}</version>
+			<version>${drools.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -231,7 +231,7 @@
 	</dependencies>
 	<properties>
 		<java.version>1.8</java.version>
-		<drools-version>7.42.0.Final</drools-version>
+		<drools.version>7.42.0.Final</drools.version>
 		<jbpm.version>7.42.0.Final</jbpm.version>
 	</properties>
 	<build>

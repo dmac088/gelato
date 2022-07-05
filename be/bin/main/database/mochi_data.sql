@@ -357,6 +357,7 @@ INSERT INTO mochi.party VALUES (233054, 1);
 INSERT INTO mochi.party VALUES (233055, 2);
 INSERT INTO mochi.party VALUES (234477, 1);
 INSERT INTO mochi.party VALUES (234482, 1);
+INSERT INTO mochi.party VALUES (234485, 1);
 
 
 --
@@ -403,14 +404,15 @@ INSERT INTO mochi.promotion_order VALUES (2030864, 'ABCD1');
 
 INSERT INTO mochi.bag VALUES (234473, 232304, '2020-12-01 21:33:14.43+08', '2020-12-01 21:33:14.431+08', NULL);
 INSERT INTO mochi.bag VALUES (234476, 232304, '2020-12-01 21:40:31.98+08', '2020-12-01 21:40:31.98+08', NULL);
-INSERT INTO mochi.bag VALUES (234484, 234482, '2020-12-02 12:54:34.693+08', '2022-05-20 18:05:56.413+08', NULL);
+INSERT INTO mochi.bag VALUES (234487, 234485, '2022-06-23 16:36:19.391+08', '2022-06-23 16:36:19.391+08', NULL);
+INSERT INTO mochi.bag VALUES (234484, 234482, '2020-12-02 12:54:34.693+08', '2022-06-23 17:00:04.502+08', NULL);
 
 
 --
 -- Name: bag_bag_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: mochidb_owner
 --
 
-SELECT pg_catalog.setval('mochi.bag_bag_id_seq', 234485, true);
+SELECT pg_catalog.setval('mochi.bag_bag_id_seq', 234487, true);
 
 
 --
@@ -426,15 +428,14 @@ INSERT INTO mochi.bag_item_status VALUES (3, 'PND01', 'Pending');
 -- Data for Name: bag_item; Type: TABLE DATA; Schema: mochi; Owner: mochidb_owner
 --
 
-INSERT INTO mochi.bag_item VALUES (234511, 234484, 1, 1, 1);
-INSERT INTO mochi.bag_item VALUES (234512, 234484, 22, 1, 1);
+INSERT INTO mochi.bag_item VALUES (234517, 234484, 18, 4, 1);
 
 
 --
 -- Name: bag_item_bag_item_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: postgres
 --
 
-SELECT pg_catalog.setval('mochi.bag_item_bag_item_id_seq', 234512, true);
+SELECT pg_catalog.setval('mochi.bag_item_bag_item_id_seq', 234517, true);
 
 
 --
@@ -543,14 +544,14 @@ SELECT pg_catalog.setval('mochi.brand_attr_lcl_bnd_id_seq', 78, true);
 -- Name: brand_attr_lcl_bnd_lcl_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: postgres
 --
 
-SELECT pg_catalog.setval('mochi.brand_attr_lcl_bnd_lcl_id_seq', 233222, true);
+SELECT pg_catalog.setval('mochi.brand_attr_lcl_bnd_lcl_id_seq', 233223, true);
 
 
 --
 -- Name: brand_bnd_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: mochidb_owner
 --
 
-SELECT pg_catalog.setval('mochi.brand_bnd_id_seq', 233218, true);
+SELECT pg_catalog.setval('mochi.brand_bnd_id_seq', 233219, true);
 
 
 --
@@ -1060,6 +1061,7 @@ INSERT INTO mochi.role VALUES (233055, 1, '2020-08-20 00:00:00+08', 233054);
 INSERT INTO mochi.role VALUES (233056, 2, '2020-09-28 11:04:23.6741+08', 233055);
 INSERT INTO mochi.role VALUES (234478, 1, '2020-12-02 12:06:31.046+08', 234477);
 INSERT INTO mochi.role VALUES (234483, 1, '2020-12-02 12:54:34.679+08', 234482);
+INSERT INTO mochi.role VALUES (234486, 1, '2022-06-23 16:36:19.382+08', 234485);
 
 
 --
@@ -1097,13 +1099,14 @@ INSERT INTO mochi.customer VALUES (233025, '1000000268');
 INSERT INTO mochi.customer VALUES (233055, '1000000269');
 INSERT INTO mochi.customer VALUES (234478, '1000000270');
 INSERT INTO mochi.customer VALUES (234483, '1000000271');
+INSERT INTO mochi.customer VALUES (234486, '6         ');
 
 
 --
 -- Name: customer_cst_num_seq; Type: SEQUENCE SET; Schema: mochi; Owner: mochidb_owner
 --
 
-SELECT pg_catalog.setval('mochi.customer_cst_num_seq', 3, true);
+SELECT pg_catalog.setval('mochi.customer_cst_num_seq', 6, true);
 
 
 --
@@ -1135,14 +1138,14 @@ INSERT INTO mochi.department_attr_lcl VALUES (4, 1, '船運', 'zh-HK');
 -- Name: department_attr_lcl_dept_lcl_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: postgres
 --
 
-SELECT pg_catalog.setval('mochi.department_attr_lcl_dept_lcl_id_seq', 7, true);
+SELECT pg_catalog.setval('mochi.department_attr_lcl_dept_lcl_id_seq', 5, true);
 
 
 --
 -- Name: department_dept_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: postgres
 --
 
-SELECT pg_catalog.setval('mochi.department_dept_id_seq', 5, true);
+SELECT pg_catalog.setval('mochi.department_dept_id_seq', 3, true);
 
 
 --
@@ -2123,6 +2126,7 @@ INSERT INTO mochi.product VALUES (2031883, 'NZA_EMSMPB_29.21_29.40', '2022-05-21
 INSERT INTO mochi.product VALUES (2031884, 'NZA_EMSMPB_29.41_29.60', '2022-05-21 22:50:23.446+08', 42, 1, 1);
 INSERT INTO mochi.product VALUES (2031885, 'NZA_EMSMPB_29.61_29.80', '2022-05-21 22:50:24.343+08', 42, 1, 1);
 INSERT INTO mochi.product VALUES (2031886, 'NZA_EMSMPB_29.81_30.00', '2022-05-21 22:50:25.312+08', 42, 1, 1);
+INSERT INTO mochi.product VALUES (2031888, '43254232', '2020-04-11 00:00:00+08', 35, 2, 1);
 
 
 --
@@ -2299,7 +2303,7 @@ INSERT INTO mochi.organisation VALUES (233055, 'Taobao', 'NA');
 -- Name: party_pty_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: mochidb_owner
 --
 
-SELECT pg_catalog.setval('mochi.party_pty_id_seq', 234483, true);
+SELECT pg_catalog.setval('mochi.party_pty_id_seq', 234485, true);
 
 
 --
@@ -2344,6 +2348,7 @@ INSERT INTO mochi.person VALUES (233024, 'bob', 'bob', false);
 INSERT INTO mochi.person VALUES (233054, 'Daniel', 'Mackie', false);
 INSERT INTO mochi.person VALUES (234477, 'rob', 'rob', false);
 INSERT INTO mochi.person VALUES (234482, 'nob', 'nob', false);
+INSERT INTO mochi.person VALUES (234485, 'Daniel', 'Mackie', false);
 
 
 --
@@ -6014,13 +6019,17 @@ INSERT INTO mochi.price VALUES (2035080, 1, 2031886, 279.74, 2);
 INSERT INTO mochi.price VALUES (2035081, 2, 2031886, 279.74, 2);
 INSERT INTO mochi.price VALUES (2035082, 1, 2031886, 2182.0, 1);
 INSERT INTO mochi.price VALUES (2035083, 2, 2031886, 2182.0, 1);
+INSERT INTO mochi.price VALUES (2035085, 1, 2031888, 60, 1);
+INSERT INTO mochi.price VALUES (2035086, 1, 2031888, 8, 2);
+INSERT INTO mochi.price VALUES (2035087, 2, 2031888, 55, 1);
+INSERT INTO mochi.price VALUES (2035088, 2, 2031888, 7, 2);
 
 
 --
 -- Name: price_prc_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: mochidb_owner
 --
 
-SELECT pg_catalog.setval('mochi.price_prc_id_seq', 2035083, true);
+SELECT pg_catalog.setval('mochi.price_prc_id_seq', 2035088, true);
 
 
 --
@@ -6234,13 +6243,15 @@ INSERT INTO mochi.product_attr_lcl VALUES (38, 19, '葡萄', 'grapes.jpg', 'zh-H
 INSERT INTO mochi.product_attr_lcl VALUES (16, 8, '番茄', 'tomato.jpg', 'zh-HK', '疼痛本身，疼痛是在主要的脂肪過程中實施的。被時間拒絕或做事蒙蔽了雙眼！那些需求？他迴避真理的權利，並渴望尋找那些他容易忍受痛苦的人，這種痛苦被稱為快樂。他選擇了哪一種煩惱，當他確實會歡迎、接受或打開正義者以這種辛苦的方式帶來的樂趣，並讓它們向真理敞開心扉時。最小的痛苦對她來說是最值得的，智者用我們應盡的義務取悅她；我將解釋鬆散的目的，並相應地獲得它們');
 INSERT INTO mochi.product_attr_lcl VALUES (2, 1, '芒果', 'mango.jpg', 'zh-HK', '疼痛本身，疼痛是在主要的脂肪過程中實施的。被時間拒絕或做事蒙蔽了雙眼！那些需求？他迴避真理的權利，並渴望尋找那些他容易忍受痛苦的人，這種痛苦被稱為快樂。他選擇了哪一種煩惱，當他確實會歡迎、接受或打開正義者以這種辛苦的方式帶來的樂趣，並讓它們向真理敞開心扉時。最小的痛苦對她來說是最值得的，智者用我們應盡的義務取悅她；我將解釋鬆散的目的，並相應地獲得它們');
 INSERT INTO mochi.product_attr_lcl VALUES (10, 5, '黄瓜', 'cucumber.jpg', 'zh-HK', '疼痛本身，疼痛是在主要的脂肪過程中實施的。被時間拒絕或做事蒙蔽了雙眼！那些需求？他迴避真理的權利，並渴望尋找那些他容易忍受痛苦的人，這種痛苦被稱為快樂。他選擇了哪一種煩惱，當他確實會歡迎、接受或打開正義者以這種辛苦的方式帶來的樂趣，並讓它們向真理敞開心扉時。最小的痛苦對她來說是最值得的，智者用我們應盡的義務取悅她；我將解釋鬆散的目的，並相應地獲得它們');
+INSERT INTO mochi.product_attr_lcl VALUES (233736, 2031888, '有機黃瓜', NULL, 'zh-HK', '新近新鮮的有機黃瓜');
+INSERT INTO mochi.product_attr_lcl VALUES (233737, 2031888, 'organic cucumber', NULL, 'en-GB', 'newly fresh organic cucumber');
 
 
 --
 -- Name: product_attr_lcl_prd_lcl_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: mochidb_owner
 --
 
-SELECT pg_catalog.setval('mochi.product_attr_lcl_prd_lcl_id_seq', 2030857, true);
+SELECT pg_catalog.setval('mochi.product_attr_lcl_prd_lcl_id_seq', 233737, true);
 
 
 --
@@ -6343,6 +6354,7 @@ INSERT INTO mochi.product_basic VALUES (19, NULL, NULL, NULL, 0.35);
 INSERT INTO mochi.product_basic VALUES (8, NULL, NULL, NULL, 0.33);
 INSERT INTO mochi.product_basic VALUES (1, NULL, NULL, NULL, 0.38);
 INSERT INTO mochi.product_basic VALUES (5, NULL, NULL, NULL, 0.42);
+INSERT INTO mochi.product_basic VALUES (2031888, 0, 0, 0, 0.00);
 
 
 --
@@ -7293,20 +7305,21 @@ INSERT INTO mochi.product_category VALUES (2283, 2031883, 46);
 INSERT INTO mochi.product_category VALUES (2284, 2031884, 46);
 INSERT INTO mochi.product_category VALUES (2285, 2031885, 46);
 INSERT INTO mochi.product_category VALUES (2286, 2031886, 46);
+INSERT INTO mochi.product_category VALUES (2288, 2031888, 8);
 
 
 --
 -- Name: product_category_prd_cat_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: mochidb_owner
 --
 
-SELECT pg_catalog.setval('mochi.product_category_prd_cat_id_seq', 2286, true);
+SELECT pg_catalog.setval('mochi.product_category_prd_cat_id_seq', 2288, true);
 
 
 --
 -- Name: product_prd_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: mochidb_owner
 --
 
-SELECT pg_catalog.setval('mochi.product_prd_id_seq', 2031886, true);
+SELECT pg_catalog.setval('mochi.product_prd_id_seq', 2031888, true);
 
 
 --
@@ -7322,7 +7335,7 @@ INSERT INTO mochi.product_promotion VALUES (2031276, 234464);
 -- Name: product_promotion_prd_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: postgres
 --
 
-SELECT pg_catalog.setval('mochi.product_promotion_prd_id_seq', 26, true);
+SELECT pg_catalog.setval('mochi.product_promotion_prd_id_seq', 2031277, true);
 
 
 --
@@ -9941,14 +9954,14 @@ INSERT INTO mochi.product_shipping_attr_lcl VALUES (2081, 2031886, '特快專遞
 -- Name: product_shipping_attr_lcl_prd_lcl_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: mochidb_owner
 --
 
-SELECT pg_catalog.setval('mochi.product_shipping_attr_lcl_prd_lcl_id_seq', 2081, true);
+SELECT pg_catalog.setval('mochi.product_shipping_attr_lcl_prd_lcl_id_seq', 2082, true);
 
 
 --
 -- Name: product_shipping_prd_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: postgres
 --
 
-SELECT pg_catalog.setval('mochi.product_shipping_prd_id_seq', 2030849, true);
+SELECT pg_catalog.setval('mochi.product_shipping_prd_id_seq', 2031887, true);
 
 
 --
@@ -10102,6 +10115,7 @@ INSERT INTO mochi.product_tag VALUES (131, 233709, 233272);
 INSERT INTO mochi.product_tag VALUES (132, 233716, 233221);
 INSERT INTO mochi.product_tag VALUES (133, 233723, 233230);
 INSERT INTO mochi.product_tag VALUES (134, 233730, 233272);
+INSERT INTO mochi.product_tag VALUES (136, 2031888, 15);
 
 
 --
@@ -10228,7 +10242,7 @@ SELECT pg_catalog.setval('mochi.rating_rat_id_seq', 6, true);
 -- Name: role_rle_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: mochidb_owner
 --
 
-SELECT pg_catalog.setval('mochi.role_rle_id_seq', 234484, true);
+SELECT pg_catalog.setval('mochi.role_rle_id_seq', 234486, true);
 
 
 --
@@ -10420,14 +10434,14 @@ INSERT INTO mochi.tag_attr_lcl VALUES (4, 17, '無麩質測試', NULL, 'zh-HK');
 -- Name: tag_attr_lcl_tag_lcl_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: postgres
 --
 
-SELECT pg_catalog.setval('mochi.tag_attr_lcl_tag_lcl_id_seq', 2030870, true);
+SELECT pg_catalog.setval('mochi.tag_attr_lcl_tag_lcl_id_seq', 233275, true);
 
 
 --
 -- Name: tag_tag_id_seq; Type: SEQUENCE SET; Schema: mochi; Owner: mochidb_owner
 --
 
-SELECT pg_catalog.setval('mochi.tag_tag_id_seq', 2030868, true);
+SELECT pg_catalog.setval('mochi.tag_tag_id_seq', 233273, true);
 
 
 --

@@ -9,6 +9,7 @@ plugins {
     id 'org.springframework.boot' version '2.6.1'
     id 'pl.allegro.tech.build.axion-release' version '1.13.6'
     id 'com.palantir.docker' version '0.31.0'
+    id 'com.palantir.docker-run' version '0.31.0'
     id 'jp.classmethod.aws.reboot.cloudformation' version '0.45'
 }
 
@@ -74,15 +75,33 @@ bootRun {
     environment 'STRIPE_SECRET_KEY', '7'
 }
 
+String dockerHubUsernameProperty = 'dannymack'
+String imageName = "my-sv2-app"
+
+group = 'io.sv2'
+version = '0.0.1'
+description = 'Back end application'
+java.sourceCompatibility = JavaVersion.VERSION_1_8
+
+docker {
+    name imageName
+    files "build/libs/${bootJar.archiveFileName.get()}"
+    tag 'DockerHub', imageName
+}
+
+dockerRun {
+    name project.name
+    image imageName
+    clean true
+    env 'STRIPE_SECRET_KEY': 'testkey'
+    arguments '--network=host'
+}
+
 test {
     useJUnitPlatform()
     systemProperty 'spring.profiles.active', 'test'
 }
 
-group = 'io.javabrains.springbootquickstart'
-version = '0.0.1'
-description = 'Purple back end application'
-java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 publishing {
     publications {

@@ -21,8 +21,8 @@ public class ShippingProductAttributeEntity implements Serializable {
 	private static final long serialVersionUID = 1442836684351542603L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "productAttributeIdGenerator")
-	@SequenceGenerator(name="productAttributeIdGenerator", sequenceName = "product_shipping_attr_lcl_prd_lcl_id_seq", schema="mochi",  allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "shippingProductAttributeIdGenerator")
+	@SequenceGenerator(name="shippingProductAttributeIdGenerator", sequenceName = "product_shipping_attr_lcl_prd_lcl_id_seq", schema="mochi",  allocationSize=1)
 	@Column(name="prd_lcl_id")
 	private Long Id;
 

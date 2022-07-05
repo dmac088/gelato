@@ -1,2 +1,2 @@
-pg_ctl -D /usr/local/var/postgres  stop
-
+#!/bin/bash
+sudo service postgresql stop

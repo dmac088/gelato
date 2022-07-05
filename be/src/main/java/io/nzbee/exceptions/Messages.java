@@ -21,7 +21,7 @@ public class Messages {
          * substitutions. Then we can read the value from the bundle and pass the value with the
          * substitutions to MessageFormat to create the final message value.
          */
-        return ResourceBundle.getBundle("messages", Locale.forLanguageTag(locale))
+        return ResourceBundle.getBundle("exceptions.messages", Locale.forLanguageTag(locale))
             .getString(messageKey);
     }
 

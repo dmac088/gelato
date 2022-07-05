@@ -64,7 +64,7 @@ logging:
     root: WARN
     org:
       springframework:  
-        web: ERROR
+        web: DEBUG
       hibernate: 
         type: DEBUG
     io:
